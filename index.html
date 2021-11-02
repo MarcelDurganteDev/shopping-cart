@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,59 +9,102 @@
     <link rel="stylesheet" href="/main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <i class="fas fa-bars"></i>
-            <img src="./assets/img/logo.svg" alt="logo">
-            <i class="fas fa-cart-plus"><span>+</span></i>
-        </nav>
-    </header>
-     <header>Our Products</header>
-        <section>
-            <figure>
-                <img src="assets/img/product-1.jpeg" alt="Queen Panel Bed">
-                <h2>Queen Panel Bed</h2>
-                <span>$100.00</span>
-            </figure>
-            <figure>
-                <img src="assets/img/product-2.jpeg" alt="King Panel Bed">
-                <h2>King Panel Bed</h2>
-                <span>$100.00</span>
-            </figure>
-            <figure>
-                <img src="assets/img/product-3.jpeg" alt="Single Panel Bed">
-                <h2>Single Panel Bed</h2>
-                <span>$100.00</span>
-            </figure>
-            <figure>
-                <img src="assets/img/product-4.jpeg" alt="Twin Panel Bed">
-                <h2>Twin Panel Bed</h2>
-                <span>$100.00</span>
-            </figure>
-            <figure>
-                <img src="assets/img/product-5.jpeg" alt="Fridge">
-                <h2>Fridge</h2>
-                <span>$100.00</span>
-            </figure>
-            <figure>
-                <img src="assets/img/product-6.jpeg" alt="Dresser">
-                <h2>Dresser</h2>
-                <span>$100.00</span>
-            </figure>
-            <figure>
-                <img src="assets/img/product-7.jpeg" alt="Couch">
-                <h2>Couch</h2>
-                <span>$100.00</span>
-            <figure>
-            </figure>
-                <img src="assets/img/product-8.jpeg" alt="Table">
-                <h2>Table</h2>
-                <span>$100.00</span>
-            </figure>
-        </section>
 
+<body>
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon"><i class="fas fa-bars"></i></span>
+            <img class='logo' src="./assets/img/logo.svg" alt="logo">
+            <div class="cart-btn">
+                <span class="nav-icon"><i class="fas fa-cart-plus"></i></span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <!--  hero  -->
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">furniture collection</h1>
+            <button class="banner-btn">Shop Now</button>
+        </div>
     </header>
-<script src="/main.js"></script>
+    <!--  end of hero  -->
+    <!--  products  -->
+    <section class="products">
+        <div class="section-title">
+            <h2>our products</h2>
+        </div>
+        <div class="products-center">
+            <!--  single product  -->
+            <article class="product">
+                <div class="img-container">
+                    <img src="./assets/img/product-1.jpeg" alt="product" class="product-img">
+                    <button class="bag-btn"><i class="fas fa-shopping-cart"></i>add to cart</button>
+                    <h3>queen bed</h3>
+                    <h4>$50</h4>
+                </div>
+            </article>
+            <article class="product">
+                <div class="img-container">
+                    <img src="./assets/img/product-1.jpeg" alt="product" class="product-img">
+                    <button class="bag-btn"><i class="fas fa-shopping-cart"></i>add to cart</button>
+                    <h3>queen bed</h3>
+                    <h4>$50</h4>
+                </div>
+            </article>
+            <article class="product">
+                <div class="img-container">
+                    <img src="./assets/img/product-1.jpeg" alt="product" class="product-img">
+                    <button class="bag-btn"><i class="fas fa-shopping-cart"></i>add to cart</button>
+                    <h3>queen bed</h3>
+                    <h4>$50</h4>
+                </div>
+            </article>
+            <article class="product">
+                <div class="img-container">
+                    <img src="./assets/img/product-1.jpeg" alt="product" class="product-img">
+                    <button class="bag-btn"><i class="fas fa-shopping-cart"></i>add to cart</button>
+                    <h3>queen bed</h3>
+                    <h4>$50</h4>
+                </div>
+            </article>
+            <!--  end of single product  -->
+        </div>
+        <!--  end of products  -->
+        <!--  cart  -->
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart">
+                    <i class="fas fa-window-close"></i>
+                </span>
+                <h2>your cart</h2>
+                <div class="cart-content">
+                    <!--  cart item -->
+                        <div class="cart-item">
+                            <img src="./assets/img/product-1.jpeg" alt="product" />
+                            <div>
+                                <h4>queen bed</h4>
+                                <h5>$9.00</h5>
+                                <span class="remove-item">remove</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-chevron-up"></i>
+                                <p class="item-amount">1</p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    <!--  end of cart item -->
+                </div>
+                <div class="cart-footer">
+                    <h3>your total : $ <span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn">clear cart</button>
+                </div>
+            </div>
+        </div>
+        <!--  end of cart  -->
+    </section>
+    </header>
+    <script src="/main.js"></script>
 </body>
+
 </html>
